@@ -1,0 +1,29 @@
+:root{
+    --color-bcgr-dark: rgba(33,23,15,1);
+	--color-text: rgba(246,229,221,1);
+	--color-red: rgba(134,48,35,1);
+	--color-grad: linear-gradient(to bottom, rgba(33,23,15,0.129) 1.04%,rgba(100,68,45,0.392) 100%);
+	--color-grayish: rgba(86,81,75,1);
+	--color-linear-red: linear-gradient(to bottom, rgba(134,48,35,0.525) 7.81%,rgba(100,68,45,0.392) 100%);
+	--color-alt-text: rgba(195,171,161,1);
+    --headerHeight: 3rem;
+}
+
+.header{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: var(--headerHeight);
+    padding: 2rem;
+    background: var(--color-bcgr-dark);
+    
+    .logo a{
+        color: var(--color-text)
+    }
+}
+
+.navbar{
+    display: flex;
+    
+}
