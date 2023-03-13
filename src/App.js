@@ -8,11 +8,13 @@ import Projects from "./Components/Projects/Projects";
 import Skills from "./Components/Skills/Skills";
 const App = () =>{
     return (
-        <div>
+        <div className="app">
             <Navbar/>
-            {/* <Home/>
-            <About/>
+            <Home/>
             <Skills/>
+            {/* 
+           
+            
             <Projects/>
             <Contact/> */}
         </div>

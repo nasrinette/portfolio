@@ -8,6 +8,7 @@
     transition: .3s ease;
 }
 
+
 :root{
     --color-bcgr-dark: rgba(33,23,15,1);
 	--color-text: rgba(246,229,221,1);
@@ -19,8 +20,10 @@
     
 }
 /* Default css setup */
+
 html{
     scroll-behavior: smooth;
+    background: linear-gradient(90deg, rgba(33,23,15,1) 14%, rgba(100,68,45,1) 100%) !important;
 }
 
 a{
@@ -62,10 +65,17 @@ img{
 }
 
 .icon{
-    font-size: 25px;
-
+    font-size: 1.8rem;
     cursor: pointer;
     margin-right: .5rem;
+    padding: 0;
+  
+}
+
+.altIcon{
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: var(--color-alt-text);
 }
 
 .btn{
@@ -77,3 +87,4 @@ img{
     position: relative;
 
 }
+

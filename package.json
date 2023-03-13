@@ -17,7 +17,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "naZrin": "echo Hello",
+    "naZrin": "echo Hello"
   },
   "eslintConfig": {
     "extends": [
