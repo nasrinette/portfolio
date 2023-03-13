@@ -17,7 +17,7 @@
     align-items: center;
     width: 100%;
     height: var(--headerHeight);
-    padding: 2.5rem;
+    padding: 3rem 3rem;
     // background: var(--color-bcgr-dark);
 
     .logo, a{
@@ -67,7 +67,9 @@
 
 @media screen and (max-width: 768px) {
     .header{
+       
         background: var(--color-bcgr-dark);
+        width: 100%;
    
     .navbar{
         background: var(--color-bcgr-dark);
@@ -79,7 +81,7 @@
         top: -100rem;
         left: 50%;
         transform: translate(-50%);
-        z-index: 1000;
+        // z-index: 1000;
         border: 0.1rem solid var(--color-text);
         border-radius: 1rem;
        
@@ -124,9 +126,8 @@
  .toggleNavbar{
         position: absolute;
         display: block;
-        top: 1.7rem;
+        top: 2.1rem;
         right: 2rem;
-        
         color: var(--color-text);
         .icon{
             font-size: 2rem;
