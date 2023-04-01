@@ -1,7 +1,6 @@
 import React from "react";
 import './App.css'
 import Navbar from "./Components/Navbar/Navbar";
-import About from "./Components/About/About";
 import Contact from "./Components/Contact/Contact";
 import Home from "./Components/Home/Home";
 import Projects from "./Components/Projects/Projects";
@@ -12,11 +11,8 @@ const App = () =>{
             <Navbar/>
             <Home/>
             <Skills/>
-            {/* 
-           
-            
             <Projects/>
-            <Contact/> */}
+            <Contact/>
         </div>
     )
 }

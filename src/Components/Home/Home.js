@@ -35,16 +35,18 @@ const Home = ()=>{
     </div>
 
 
-            <div className="front-elms">
-                  <div className="icons">
-                <a className="altIcon" href="" target=""><SiLinkedin/></a>
-                <a className="altIcon" href="" target=""><SiInstagram/></a>
-                <a className="altIcon" href="" target=""><SiGithub/></a>
-            </div>
+           <div className="front-elms">
+                <div className="icons-container">
+                <div className="icons">
+                    <a className="altIcon" href="" target=""><SiLinkedin/></a>
+                    <a className="altIcon" href="" target=""><SiInstagram/></a>
+                    <a className="altIcon" href="" target=""><SiGithub/></a>
+                </div>   
+                </div>
 
-            <div className="rightEmail">
-                <a href="https://mailto:nsrvansrn@gmail.com" target="">nsrvansrn@gmail.com</a>
-            </div>
+                <div className="email-container">
+                <span className="email-text">nsrvansrn@gmail.com</span>
+                </div>
             </div>
 
         </div>

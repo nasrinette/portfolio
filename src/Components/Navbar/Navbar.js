@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import './navbar.scss'
+import { Link, Switch, Route } from "react-router-dom";
 
 import {IoDiamond} from "react-icons/io5"
 import {AiFillCloseCircle} from "react-icons/ai"

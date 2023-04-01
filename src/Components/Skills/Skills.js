@@ -14,7 +14,7 @@ const Skills = ()=>{
 
             <div className="pos-cont">
                 <div className="pos-elements">
-                    <h3 className="skill-name">Frontend<br/>Development</h3> 
+                    <h3 className="skill-name">Frontend</h3> 
                     <p>3 years of experience </p>
                     <div className="icons">
                         <AiFillHtml5 className="icn"/>

@@ -1,0 +1,116 @@
+:root {
+	--color-bg-dark: rgba(33, 23, 15, 1);
+	--color-text: rgba(246, 229, 221, 1);
+	--color-red: rgba(134, 48, 35, 1);
+	--color-grayish: rgba(86, 81, 75, 0.5);
+	--color-alt-text: rgba(195, 171, 161, 1);
+  }
+  
+  .Projects {
+	h1 {
+	  margin-top: 2rem;
+	  margin-bottom: 1.5rem;
+	  font-size: 2.2rem;
+	  color: var(--color-text);
+	  &:hover{
+        color: var(--color-red);
+    }
+	  
+	}
+  
+	.subtit {
+	  font-size: 1.5rem;
+	  color: var(--color-alt-text);
+	  font-weight: 500;
+	  margin-bottom: 1.5rem;
+	}
+  
+	padding: 0 16rem;
+	@media screen and (max-width: 1100px) {
+		padding: 0 8rem;
+	  }
+
+	@media screen and (max-width: 720px) {
+		padding: 0 6rem;
+	  }
+  
+	.projects {
+	  margin-top: 1rem;
+	  display: grid;
+	  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	  gap: 2rem;
+	}
+  
+	.project {
+	  border-radius: 10px;
+	  background-color: var(--color-text);
+	  overflow: hidden;
+  
+	  img {
+		border-radius: 10px;
+		width: 100%;
+		height: auto;
+		object-fit: cover;
+		filter: brightness(50%);
+		transition: filter 0.2s;
+  
+		&:hover {
+		  filter: grayscale(0%);
+		}
+	  }
+  
+	  .project-info {
+		padding: 1rem;
+  
+		h3 {
+		  margin-top: 0;
+		  margin-bottom: 0.5rem;
+		  color: var(--color-bg-dark);
+		}
+  
+		p {
+		  margin: 0 0 1rem;
+		  color: var(--color-bg-dark);
+		}
+  
+		ul {
+		  margin: 0 0 1rem;
+		  padding-left: 0;
+  
+		  li {
+			display: inline-block;
+			margin-right: 0.5rem;
+			font-size: 0.8em;
+			padding: 0.25rem 0.5rem;
+			background-color: var(--color-alt-text);
+			border-radius: 5px;
+		  }
+		}
+  
+		.project-links {
+		  margin-top: 1rem;
+  
+		  a {
+			display: inline-block;
+			margin-right: 1rem;
+			padding: 0.25rem 0.5rem;
+			background-color: var(--color-red);
+			color: #fff;
+			text-decoration: none;
+			border-radius: 5px;
+			transition: background-color 0.2s;
+  
+			&:hover {
+			  background: linear-gradient(
+				0deg,
+				rgba(246, 224, 221, 0.2),
+				rgba(246, 224, 221, 0.2)
+			  ),
+				#863023;
+			}
+		  }
+		}
+	  }
+	}
+  }
+  
