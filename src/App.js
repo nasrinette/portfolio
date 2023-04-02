@@ -5,15 +5,17 @@ import Contact from "./Components/Contact/Contact";
 import Home from "./Components/Home/Home";
 import Projects from "./Components/Projects/Projects";
 import Skills from "./Components/Skills/Skills";
+import { Route, Routes } from 'react-router-dom';
 const App = () =>{
     return (
         <div className="app">
-            <Navbar/>
+         <Navbar/>
             <Home/>
             <Skills/>
             <Projects/>
             <Contact/>
-        </div>
-    )
+  
+    </div>
+    ) 
 }
 export default App;
