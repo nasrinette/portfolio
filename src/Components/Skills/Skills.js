@@ -16,7 +16,7 @@ import {
 
 const Skills = () => {
   return (
-    <section className="skills">
+    <section className="skills" id="skills">
       <div className="skills-cont">
         <h1 className="my-skills">MY SKILLS</h1>
 

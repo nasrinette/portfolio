@@ -1,121 +1,119 @@
-:root{
-    --color-bcgr-dark: rgba(33,23,15,1);
-	--color-text: rgba(246,229,221,1);
-	--color-red: rgba(134,48,35,1);
+:root {
+  --color-bcgr-dark: rgba(33, 23, 15, 1);
+  --color-text: rgba(246, 229, 221, 1);
+  --color-red: rgba(134, 48, 35, 1);
 
-	--color-grad: linear-gradient(to bottom, rgba(33,23,15,0.129) 1.04%,rgba(100,68,45,0.392) 100%);
-	--color-grayish: rgba(86,81,75,1);
-	--color-linear-red: linear-gradient(to bottom, rgba(134,48,35,0.525) 7.81%,rgba(100,68,45,0.392) 100%);
-	--color-alt-text: rgba(195,171,161,1);
-    --headerHeight: 3rem;
+  --color-grad: linear-gradient(
+    to bottom,
+    rgba(33, 23, 15, 0.129) 1.04%,
+    rgba(100, 68, 45, 0.392) 100%
+  );
+  --color-grayish: rgba(86, 81, 75, 1);
+  --color-linear-red: linear-gradient(
+    to bottom,
+    rgba(134, 48, 35, 0.525) 7.81%,
+    rgba(100, 68, 45, 0.392) 100%
+  );
+  --color-alt-text: rgba(195, 171, 161, 1);
+  --headerHeight: 3rem;
 }
 
-.skills{
-    width: 100%;
-    padding: 5rem 12rem;
-    @media screen and (max-width: 1100px) {
-        padding: 0 4em;
+.skills {
+  width: 100%;
+  padding: 6rem 12rem;
+  @media screen and (max-width: 1100px) {
+    padding: 0 4em;
+  }
+
+  .skills-cont {
+    .my-skills {
+      padding: 0 0rem 0 4rem;
+      font-size: 2.2rem;
+      color: var(--color-text);
+      &:hover {
+        color: var(--color-red);
       }
- 
+    }
+    .pos-cont {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
 
-  
-    .skills-cont{
+      .pos-elements {
+        padding: 0rem 2rem;
+        margin: 2rem;
+        font-size: 1.3rem;
+        // border: 1px solid var(--color-alt-text);
+        p {
+          color: var(--color-alt-text);
+          padding-bottom: 1rem;
+        }
+        .skill-name {
+          color: var(--color-text);
+          padding: 1rem 0rem;
+          text-shadow: 0 0px 5px var(--color-bcgr-dark);
+          font-size: 1.8rem;
+        }
+        .icons {
+          padding: 1rem;
+          // border: 1px solid var(--color-alt-text);
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          column-gap: 1rem;
+          row-gap: 1rem;
 
-        .my-skills{
-        padding:  0 0rem 0 4rem;
+          .icn {
+            border: 1px solid var(--color-alt-text);
+            font-size: 3rem;
+            color: var(--color-text);
+            background-color: var(--color-red);
+            padding: 0.4rem;
+            border-radius: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .skills {
+    padding: 0;
+    margin: 0;
+
+    .skills-cont {
+      .my-skills {
+        text-align: center;
+        padding: 0;
         font-size: 2.2rem;
         color: var(--color-text);
-    &:hover{
-        color: var(--color-red);
-    }
-
-    }
-        .pos-cont{
-        display: flex;  
-        flex-wrap: wrap;
-        justify-content: space-between;
-      
-            .pos-elements{
-                padding: 0rem 2rem;
-                margin: 2rem;
-                font-size: 1.3rem;
-                // border: 1px solid var(--color-alt-text);
-                p{
-                    color: var(--color-alt-text);
-                    padding-bottom: 1rem;
-                }
-                .skill-name{
-                    color: var(--color-text);
-                    padding: 1rem 0rem;
-                    text-shadow: 0 0px 5px var(--color-bcgr-dark);      
-                    font-size: 1.8rem;
-                }
-                .icons{
-                    padding: 1rem;
-                    // border: 1px solid var(--color-alt-text);
-                    display: grid;
-                    grid-template-columns: 1fr 1fr 1fr;
-                    column-gap: 1rem;
-                    row-gap: 1rem;
-                    
-                    .icn{
-                        border: 1px solid var(--color-alt-text);
-                        font-size: 3rem;
-                        color: var(--color-text);
-                        background-color: var(--color-red);
-                        padding: 0.4rem;
-                        border-radius: 10px;
-
-                    }
-                }
-            }
+        &:hover {
+          color: var(--color-red);
         }
-    }
-}
+      }
+      .pos-cont {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: nowrap;
+        .pos-elements {
+          margin: 0;
 
-@media screen and (max-width: 800px){
-    .skills{
-        padding:0;
-        margin:0;
-      
-      
-        .skills-cont{
-
-            .my-skills{
-                text-align: center;
-                padding: 0;
-                font-size: 2.2rem;
-                color: var(--color-text);
-                &:hover{
-                color: var(--color-red);
-                    }
-                }
-            .pos-cont{
-                padding: 0;
-                margin: 0;
-                display: flex;
-                flex-direction: column;
-                align-items:center;
-                flex-wrap: nowrap;          
-                .pos-elements{
-                    margin: 0;
-                 
-                    font-size: 1.3rem;
-                    p{
-                        color: var(--color-alt-text);
-                        padding-bottom: 1rem;
-                    }
-                    .skill-name{
-                        color: var(--color-text);
-                        padding: 1rem 0rem;
-                        text-shadow: 0 0px 5px var(--color-bcgr-dark);      
-                        font-size: 1.8rem;
-                    }
-                }
-            }
+          font-size: 1.3rem;
+          p {
+            color: var(--color-alt-text);
+            padding-bottom: 1rem;
+          }
+          .skill-name {
+            color: var(--color-text);
+            padding: 1rem 0rem;
+            text-shadow: 0 0px 5px var(--color-bcgr-dark);
+            font-size: 1.8rem;
+          }
         }
+      }
     }
-    
-
+  }
 }
-
