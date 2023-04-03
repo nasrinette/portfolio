@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./navbar.scss";
-import { Link } from "react-router-dom";
+import { scrollTo } from "../../utils/scroll";
 
 import { IoDiamond } from "react-icons/io5";
 import { AiFillCloseCircle } from "react-icons/ai";
@@ -27,19 +27,14 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", addBg);
   }, []);
 
-  const scrollTo = (name) => {
-    const element = document.getElementById(name);
-    element.scrollIntoView({ behavior: "smooth", block: "start" });
-  };
-
   return (
     <header className={activeHeader}>
       <div className="logoDiv">
         <h1 className="logo">
-          <a href="#home">
+          <p onClick={() => scrollTo("home")}>
             <IoDiamond className="icon" />
             PORTFOLIO
-          </a>
+          </p>
         </h1>
       </div>
       <div className={active}>

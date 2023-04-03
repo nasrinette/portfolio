@@ -4,7 +4,19 @@ import { FiDownloadCloud } from "react-icons/fi";
 import { SiLinkedin, SiInstagram, SiGithub } from "react-icons/si";
 import { BsMouse, BsArrowDown } from "react-icons/bs";
 import { Link } from "react-router-dom";
+import { scrollTo } from "../../utils/scroll";
+
 const Home = () => {
+    const handleDownload = () => {
+        const link = document.createElement('a');
+        link.href = process.env.PUBLIC_URL + '/Nazrin_Nasirova_UI_UX.pdf';
+        link.download = 'Nazrin_Nasirova_UI_UX.pdf';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+      }
+      
+
   return (
     <div id="home" className="home">
       <div className="img-container">
@@ -17,20 +29,17 @@ const Home = () => {
           </p>
 
           <div className="lowerHomeSec">
-            <div className="btnDiv">
-              <button
-                onclick="window.location.href='Nazrin_Nasirova_UI_UX.pdf'"
-                className="cvBtn"
-              >
-                Download CV{" "}
-                <span className="downld-icon">
-                  <FiDownloadCloud />
-                </span>
-              </button>
-            </div>
+          <div className="btnDiv">
+    <button className="cvBtn" onClick={handleDownload}>
+      Download CV{" "}
+      <span className="downld-icon">
+        <FiDownloadCloud />
+      </span>
+    </button>
+  </div>
 
-            <div className="scrollDiv">
-              <Link to="/skills" className="flex">
+            <div onClick={() => scrollTo("skills")} className="scrollDiv">
+              <div className="flex">
                 <span>
                   <BsMouse className="altIcon" />
                 </span>
@@ -38,7 +47,7 @@ const Home = () => {
                 <span className="arrow">
                   <BsArrowDown />
                 </span>
-              </Link>
+              </div>
             </div>
           </div>
         </div>
@@ -53,20 +62,22 @@ const Home = () => {
       <div className="front-elms">
         <div className="icons-container">
           <div className="icons">
-            <a className="altIcon" href="" target="">
+            <a className="altIcon" href='https://www.linkedin.com/in/nazrin-nasirova-46201920b' target="_blank">
               <SiLinkedin />
             </a>
-            <a className="altIcon" href="" target="">
+            <a className="altIcon" href="https://www.instagram.com/nasrinettee" target="_blank">
               <SiInstagram />
             </a>
-            <a className="altIcon" href="" target="">
+            <a className="altIcon" href="https://github.com/nasrinette" target="_blank">
               <SiGithub />
             </a>
           </div>
         </div>
 
         <div className="email-container">
-          <span className="email-text">nsrvansrn@gmail.com</span>
+          <a href={`mailto:${"nsrvansrn@gmail.com"}`}
+        target="_blank"
+        rel="noopener noreferrer" className="email-text">nsrvansrn@gmail.com</a>
         </div>
       </div>
     </div>
