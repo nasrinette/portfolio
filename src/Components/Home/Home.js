@@ -25,7 +25,7 @@ const Home = () => {
 
           <h1 className="title">Nazrin Nasirova</h1>
           <p className="subTitle">
-            A self-taught Web designer and Front-end developer
+            A self-taught UI/UX designer and Front-end developer
           </p>
 
           <div className="lowerHomeSec">
